@@ -40,7 +40,9 @@ struct LinkedList
 //ll_add, Agrega un elemento al final de LinkedList..
 //ll_remove,Elimina un elemento en LinkedList, en el índice
 //ll_get,Agrega un elemento al final de LinkedList.
-//ll_len.Retorna el tamaño del LinkedList
+
+//ll_len.Retorna el tamaño del LinkedList <<<<<------------
+
 // O LEE BINARIO O EN TEXTO<----NO NESESARIAMENTE, HACERLO COMO DICE EL TP Y NADA MAS AL PIE DE LA LETRA SI DICE QUE LEA AMBOS DEBE LEER AMBOS!
 LinkedList* ll_newLinkedList(void);//<<<----
 int ll_len(LinkedList* this);//<<<<<------

@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "LinkedList.h"
 #include "Employee.h"
+#include "Controller.h"
+#include "parser.h"
+#define PATHB "data.dat"
+
 
 
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
@@ -14,14 +18,19 @@
 int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
 
+    FILE* miArchivo;
+    if(path!=NULL&&pArrayListEmployee!=NULL)
+    {
+        miArchivo=fopen(path,"r");
+        parser_EmployeeFromText(miArchivo,pArrayListEmployee);
 
-
-
-
-
-
-
-
+        /*valid=parser_EmployeeFromText(miArchivo,pArrayListEmployee);
+        if(valida!=0){
+        fclose(miArchivo);
+        }
+        */
+        fclose(miArchivo);
+    }
 /*
     char id[500],nombre[500],horasTrabajas[500],sueldo[500];
 
@@ -65,6 +74,18 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
  */
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
+
+    int i;
+    if(path != NULL && pArrayListEmployee != NULL)
+    {
+        FILE* MAB;
+
+
+        MAB = fopen(PATHB, "rb");
+        parser_EmployeeFromBinary(MAB, pArrayListEmployee);
+        fclose(MAB);
+    }
+
     return 1;
 }
 
@@ -113,6 +134,20 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
+   int i;
+    Employee* aux;
+
+    printf("\n\nLista de empleados\n");
+    printf("id   |Nombre              |sueldo     |horas trabajadas\n");
+    for(i=0;i<ll_len(pArrayListEmployee);i++)
+    {
+        aux= (Employee*)  ll_get(pArrayListEmployee, i);
+        employee_list(aux);
+
+    }
+
+    system("pause");
+
     return 1;
 }
 
