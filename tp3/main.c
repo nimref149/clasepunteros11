@@ -49,9 +49,7 @@ int main()
             controller_loadFromBinary("data.csv",listaEmpleados);
             break;
         case 3:
-
             controller_addEmployee(listaEmpleados);
-
             break;
         case 4:
             controller_editEmployee(listaEmpleados);
@@ -61,6 +59,7 @@ int main()
             break;
         case 6:
             controller_ListEmployee(listaEmpleados);
+            printf("hola");
             break;
         case 7:
             controller_sortEmployee(listaEmpleados);

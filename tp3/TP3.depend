@@ -80,35 +80,36 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1560177963 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\employee.c
+1560276360 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\employee.c
 	"Employee.h"
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1560175682 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\controller.c
+1560276307 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 	"Controller.h"
+	"parser.h"
 
-1560173439 c:\users\alumno\downloads\clasepunteros11-master\tp3\linkedlist.h
+1560179419 c:\users\alumno\downloads\clasepunteros11-master\tp3\linkedlist.h
 
-1560176432 c:\users\alumno\downloads\clasepunteros11-master\tp3\employee.h
+1560276307 c:\users\alumno\downloads\clasepunteros11-master\tp3\employee.h
 
-1559575161 c:\users\alumno\downloads\clasepunteros11-master\tp3\controller.h
+1560179419 c:\users\alumno\downloads\clasepunteros11-master\tp3\controller.h
 
-1560176925 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\parser.c
+1560275025 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 	"parser.h"
 
-1559575161 c:\users\alumno\downloads\clasepunteros11-master\tp3\parser.h
+1560179419 c:\users\alumno\downloads\clasepunteros11-master\tp3\parser.h
 
-1560178020 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\main.c
+1560275682 source:c:\users\alumno\downloads\clasepunteros11-master\tp3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"

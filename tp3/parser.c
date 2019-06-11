@@ -13,7 +13,7 @@
  */
 int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
 {
-    //int validar=1;
+    //int validar=1;tipo de validacion
     char id[100],nombre[100], horasTrabajadas[100], sueldo[100];
     Employee* aux;
     if(pFile!=NULL)
@@ -31,7 +31,7 @@ int parser_EmployeeFromText(FILE* pFile, LinkedList* pArrayListEmployee)
             printf("\n%d\n",ll_len(pArrayListEmployee));
         }
     }
-    /*else{
+    /*else{ talves agregar esto para mejorar programar
     validar=0;
     }
     */
